@@ -6,10 +6,12 @@
         <link rel="stylesheet" href="style.css"></link>
         <script src="./jquery.min.js"></script>
         <script src="func.js" defer></script>
+        <script src="StepSection.js" defer></script>
+        <script src="HighlightText.js" defer></script>
         <script src="https://unpkg.com/@3mo/flex@1.0.6/dist/bundle.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body class="nav-container">
+    <body>
       <section class="navigation">
         <div class="nav-container">
           <div class="brand">
@@ -30,58 +32,42 @@
 
       <section>
         <div class="responsive-two-column-grid header">
-          <div class="inline headings">
-            <mo-flex gap="10px" style="max-width: 500px">
-              <span id="hero1"> Hier lernst du wie du <span class="highlight">Pizza</span> machst.</span>
-              <span id="hero2">Einfach. Lecker. <span class="highlight">Pizza!</span></span>
+          <div class="heroSec headings">
+            <mo-flex  gap="10px" style="max-width: 500px;" justifyContent="center">
+              <span id="hero1"> Hier lernst du wie du <highlight-text>Pizza</highlight-text> machst.</span>
+              <span id="hero2"> <highlight-text>Einfach. Lecker. Pizza!</highlight-text></span>
             </mo-flex>
-            <img class="mobile-hide" src="img/DarkHarvest.png" alt="DarkHarvest">
           </div>
-
+        </section>
+        <section class="nav-container responsive-two-column-grid">
           <div id="zitat">
             <span>Das eigentliche Studium der Menschheit ist <span id="mensch">der Mensch.</span> <span id="pizza" >*die Pizza</span><br> - Johann Wolfgang von Goethe</span>
           </div>
         </div>
       </section>
 
-        <section class="responsive-two-column-grid">
+        <section class="responsive-two-column-grid nav-container">
           <div class="pizza-div">
-            <span class="howToMakeAPizza">How to make a Pizza</span>
+            <span class="howToMakeAPizza">Was brauchst du?</span>
+            <p><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, .</span>
+            </p>
           </div>
 
-          <div class="flex-container">
-            <div class="box1">
-              <span class="steps">Schritt 1</span> <br>
-              <span class="step-header">Der Teig</span> <br><br>
-              <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, .</span>
-            </div>
-            <div class="box2">
-              <iframe width="358" height="202" src="https://www.youtube.com/embed/eZTS4cL4Euo" frameborder="0"></iframe>
-            </div>
+          <div>
+            <highlight-text class="howToMakeAPizza highlight">How to</highlight-text>
           </div>
 
-          <div class="flex-container-reversed">
-            <div class="box2">
-              <iframe width="358" height="202" src="https://www.youtube.com/embed/eZTS4cL4Euo" frameborder="0"></iframe>
-            </div>
-            <div class="box1">
-              <span class="steps">Schritt 2</span> <br>
-              <span class="step-header">Der Belag</span> <br><br>
-              <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, .</span>
-            </div>
-          </div>
+          <step-section heading="Schritt 1" subHeading="Der Teig">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          </step-section>
 
-          <div class="flex-container">
-            <div class="box1">
-              <span class="steps">Schritt 1</span> <br>
-              <span class="step-header">Der Teig</span> <br><br>
-              <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, .</span>
-            </div>
-            <div class="box2">
-              <iframe width="358" height="202" src="https://www.youtube.com/embed/eZTS4cL4Euo" frameborder="0"></iframe>
-            </div>
-          </div>
+          <step-section heading="Schritt 2" subHeading="Der Belag" reversed>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          </step-section>
 
+          <step-section heading="Schritt 3" subHeading="Das Handwerk">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          </step-section>
         </section>
     </body>
 </html>

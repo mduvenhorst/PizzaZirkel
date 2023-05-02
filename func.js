@@ -10,9 +10,7 @@ document.querySelectorAll('nav ul li a:not(:only-child)').forEach(element => {
 document.addEventListener('click', () => $('.nav-dropdown').hide())
 
 const navToggle = document.querySelector('#nav-toggle')
-navToggle.addEventListener('click', () => {
+navToggle?.addEventListener('click', () => {
   navToggle.classList.toggle('active')
   $('nav ul').slideToggle()
 })
-
-
