@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Zutaten</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="func.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <title>Zutaten</title>
+      <link rel="stylesheet" href="style.css"></link>
+      <script src="./jquery.min.js"></script>
+      <script src="func.js" defer></script>
+      <script src="rechner.js"></script>
+      <script src="https://unpkg.com/@3mo/flex@1.0.6/dist/bundle.js" defer></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="nav-container">
+
         <section class="navigation">
             <div class="nav-container">
               <div class="brand">
@@ -26,6 +29,29 @@
               </nav>
             </div>
           </section>
-          <p>udfhasudikhgdsufihdfgi</p>
+         
+          <section class="calc-container" >
+            <h2 align="center">Pizzarechner</h2>
+            <div align="center">
+              <span>Wie viele Pizzen möchtest du backen?</span>
+              <input id="pizzaForm" value="2">
+                <button type="button" onclick="berechneZutaten()">Calculate</button>
+                <div class="container2">
+                  <div>
+                    <span class="calcBox1">Mehl:</span>
+                    <span class="calcBox1">Wasser:</span>
+                    <span class="calcBox1">Salz:</span>
+                    <span class="calcBox1">Hefe:</span>
+                 </div>
+                  <div>
+                    <span id="mehl">500g</span>
+                    <span id="wasser">325ml</span>
+                    <span id="salz">5g</span>
+                    <span id="hefe">0.5g</span>
+                  </div>
+                </div>
+            </div>
+          </section>
+
     </body>
 </html>

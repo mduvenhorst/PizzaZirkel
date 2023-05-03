@@ -12,6 +12,7 @@ class StepSection extends HTMLElement {
 					gap: 10px;
 					height: 100%;
 					min-height: 300px;
+					padding: 1rem;
 				}
 
 				:host([reversed]) .container {
@@ -36,6 +37,13 @@ class StepSection extends HTMLElement {
 				.step-header {
 					font-size: 30px;
 				}
+				
+				@media only screen and (max-width: 800px) {
+				#iframeID {
+					width: 346px;
+					height: 195px
+					}
+				}
 			</style>
 			<div class="container">
 				<div class="box1">
@@ -46,7 +54,7 @@ class StepSection extends HTMLElement {
 					</span>
 				</div>
 				<div class="box2">
-					<iframe width="433" height="244" src="https://www.youtube.com/embed/eZTS4cL4Euo" frameborder="0"></iframe>
+					<iframe id="iframeID" width="433" height="244" src="https://www.youtube.com/embed/eZTS4cL4Euo" frameborder="0"></iframe>
 				</div>
 			</div>
 		`

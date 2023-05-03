@@ -8,6 +8,7 @@
         <script src="func.js" defer></script>
         <script src="StepSection.js" defer></script>
         <script src="HighlightText.js" defer></script>
+        <script src="HeroSection.js" defer></script>
         <script src="https://unpkg.com/@3mo/flex@1.0.6/dist/bundle.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -30,15 +31,9 @@
         </div>
       </section>
 
-      <section>
-        <div class="responsive-two-column-grid header">
-          <div class="heroSec headings">
-            <mo-flex  gap="10px" style="max-width: 500px;" justifyContent="center">
-              <span id="hero1"> Hier lernst du wie du <highlight-text>Pizza</highlight-text> machst.</span>
-              <span id="hero2"> <highlight-text>Einfach. Lecker. Pizza!</highlight-text></span>
-            </mo-flex>
-          </div>
-        </section>
+      <hero-section text-hero1="Hier lernst du wie du <highlight-text>Pizza</highlight-text> machst." text-hero2="<highlight-text>Einfach. Lecker. Pizza!</highlight-text>">
+
+      </hero-section>>
         <section class="nav-container responsive-two-column-grid">
           <div id="zitat">
             <span>Das eigentliche Studium der Menschheit ist <span id="mensch">der Mensch.</span> <span id="pizza" >*die Pizza</span><br> - Johann Wolfgang von Goethe</span>
@@ -51,10 +46,9 @@
             <span class="howToMakeAPizza">Was brauchst du?</span>
             <p><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, .</span>
             </p>
-          </div>
-
-          <div>
-            <highlight-text class="howToMakeAPizza highlight">How to</highlight-text>
+            <a href="zutaten.html">
+              <button class="button">Zum Rechner</button>
+             </a>
           </div>
 
           <step-section heading="Schritt 1" subHeading="Der Teig">
